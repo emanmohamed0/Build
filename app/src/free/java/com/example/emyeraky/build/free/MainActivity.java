@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 
-import com.example.JokeClass;
+
 import com.example.emyeraky.build.R;
 import com.example.mylibrary.JokeActivity;
 import com.google.android.gms.ads.AdListener;
@@ -76,7 +76,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void tellJoke() {
         Intent intent = new Intent(this, JokeActivity.class);
-        String joke = JokeClass.jokes;
+        String joke = null; 
+
         intent.putExtra(JokeActivity.KEYJOKE, joke);
         startActivity(intent);
 

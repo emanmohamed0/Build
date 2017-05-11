@@ -1,5 +1,7 @@
 package com.example.emyeraky.build;
 
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.test.runner.AndroidJUnit4;
 import android.util.Log;
 
@@ -20,6 +22,7 @@ import static junit.framework.Assert.assertTrue;
 
 @RunWith(AndroidJUnit4.class)
 public class EndpointsAsyncTaskTest {
+    @RequiresApi(api = Build.VERSION_CODES.CUPCAKE)
     @Test
     public void DoInBackground() throws Exception{
         try {
